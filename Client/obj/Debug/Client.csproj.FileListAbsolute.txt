@@ -1,0 +1,16 @@
+C:\Code\C_Sharp\LapTrinhMang\dictionary\Client\obj\Debug\Client.csproj.AssemblyReference.cache
+C:\Code\C_Sharp\LapTrinhMang\dictionary\Client\obj\Debug\Client.Properties.Resources.resources
+C:\Code\C_Sharp\LapTrinhMang\dictionary\Client\obj\Debug\Client.csproj.GenerateResource.cache
+C:\Code\C_Sharp\LapTrinhMang\dictionary\Client\obj\Debug\Client.csproj.CoreCompileInputs.cache
+C:\Code\C_Sharp\LapTrinhMang\dictionary\Client\obj\Debug\Client.LoginForm.resources
+C:\Code\C_Sharp\LapTrinhMang\dictionary\Client\obj\Debug\Client.MainForm.resources
+C:\Code\C_Sharp\LapTrinhMang\dictionary\Client\obj\Debug\Client.RegisterForm.resources
+C:\Code\C_Sharp\LapTrinhMang\dictionary\Client\bin\Debug\Client.exe.config
+C:\Code\C_Sharp\LapTrinhMang\dictionary\Client\bin\Debug\Client.exe
+C:\Code\C_Sharp\LapTrinhMang\dictionary\Client\bin\Debug\Client.pdb
+C:\Code\C_Sharp\LapTrinhMang\dictionary\Client\bin\Debug\Newtonsoft.Json.dll
+C:\Code\C_Sharp\LapTrinhMang\dictionary\Client\bin\Debug\Newtonsoft.Json.xml
+C:\Code\C_Sharp\LapTrinhMang\dictionary\Client\obj\Debug\Client.csproj.Up2Date
+C:\Code\C_Sharp\LapTrinhMang\dictionary\Client\obj\Debug\Client.exe
+C:\Code\C_Sharp\LapTrinhMang\dictionary\Client\obj\Debug\Client.pdb
+C:\Code\C_Sharp\LapTrinhMang\dictionary\Client\obj\Debug\Client.exe.config
