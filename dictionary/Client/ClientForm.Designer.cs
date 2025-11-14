@@ -26,59 +26,76 @@
             this.btnClose = new System.Windows.Forms.Button();
             this.lblStatus = new System.Windows.Forms.Label();
             this.SuspendLayout();
-
+            // 
             // txtIP
+            // 
             this.txtIP.Location = new System.Drawing.Point(20, 20);
             this.txtIP.Name = "txtIP";
             this.txtIP.Size = new System.Drawing.Size(150, 22);
-            this.txtIP.Text = "127.0.0.1";
-
+            this.txtIP.TabIndex = 0;
+            this.txtIP.Text = "192.168.1.6";
+            // 
             // txtPort
+            // 
             this.txtPort.Location = new System.Drawing.Point(180, 20);
             this.txtPort.Name = "txtPort";
             this.txtPort.Size = new System.Drawing.Size(80, 22);
+            this.txtPort.TabIndex = 1;
             this.txtPort.Text = "5000";
-
-            // btnConnect
-            this.btnConnect.Location = new System.Drawing.Point(270, 18);
-            this.btnConnect.Name = "btnConnect";
-            this.btnConnect.Size = new System.Drawing.Size(80, 25);
-            this.btnConnect.Text = "Connect";
-            this.btnConnect.Click += new System.EventHandler(this.btnConnect_Click);
-
-            // lblStatus
-            this.lblStatus.Location = new System.Drawing.Point(360, 20);
-            this.lblStatus.Name = "lblStatus";
-            this.lblStatus.Size = new System.Drawing.Size(120, 22);
-            this.lblStatus.Text = "Status: None";
-
+            // 
             // txtSearch
+            // 
             this.txtSearch.Location = new System.Drawing.Point(20, 60);
             this.txtSearch.Name = "txtSearch";
             this.txtSearch.Size = new System.Drawing.Size(240, 22);
-
+            this.txtSearch.TabIndex = 4;
+            // 
+            // txtResult
+            // 
+            this.txtResult.Location = new System.Drawing.Point(20, 100);
+            this.txtResult.Multiline = true;
+            this.txtResult.Name = "txtResult";
+            this.txtResult.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.txtResult.Size = new System.Drawing.Size(460, 200);
+            this.txtResult.TabIndex = 6;
+            // 
+            // btnConnect
+            // 
+            this.btnConnect.Location = new System.Drawing.Point(270, 18);
+            this.btnConnect.Name = "btnConnect";
+            this.btnConnect.Size = new System.Drawing.Size(80, 25);
+            this.btnConnect.TabIndex = 2;
+            this.btnConnect.Text = "Connect";
+            this.btnConnect.Click += new System.EventHandler(this.btnConnect_Click);
+            // 
             // btnSearch
+            // 
             this.btnSearch.Location = new System.Drawing.Point(270, 58);
             this.btnSearch.Name = "btnSearch";
             this.btnSearch.Size = new System.Drawing.Size(80, 25);
+            this.btnSearch.TabIndex = 5;
             this.btnSearch.Text = "Search";
             this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
-
-            // txtResult
-            this.txtResult.Location = new System.Drawing.Point(20, 100);
-            this.txtResult.Multiline = true;
-            this.txtResult.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.txtResult.Name = "txtResult";
-            this.txtResult.Size = new System.Drawing.Size(460, 200);
-
+            // 
             // btnClose
+            // 
             this.btnClose.Location = new System.Drawing.Point(400, 310);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(80, 25);
+            this.btnClose.TabIndex = 7;
             this.btnClose.Text = "Close";
             this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
-
+            // 
+            // lblStatus
+            // 
+            this.lblStatus.Location = new System.Drawing.Point(360, 20);
+            this.lblStatus.Name = "lblStatus";
+            this.lblStatus.Size = new System.Drawing.Size(120, 22);
+            this.lblStatus.TabIndex = 3;
+            this.lblStatus.Text = "Status: None";
+            // 
             // ClientForm
+            // 
             this.ClientSize = new System.Drawing.Size(500, 350);
             this.Controls.Add(this.txtIP);
             this.Controls.Add(this.txtPort);
@@ -92,6 +109,7 @@
             this.Text = "Dictionary Client";
             this.ResumeLayout(false);
             this.PerformLayout();
+
         }
 
         #endregion

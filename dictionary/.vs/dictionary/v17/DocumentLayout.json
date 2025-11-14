@@ -1,41 +1,41 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Code\\C_Sharp\\LapTrinhMang\\dictionary\\",
+  "WorkspaceRootPath": "C:\\Code\\dictionary_prj_LTM\\dictionary\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{6ECE9CDA-92CA-45FC-9785-DA26B04F7FEF}|Server\\Server.csproj|c:\\code\\c_sharp\\laptrinhmang\\dictionary\\server\\serverform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6ECE9CDA-92CA-45FC-9785-DA26B04F7FEF}|Server\\Server.csproj|solutionrelative:server\\serverform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6ECE9CDA-92CA-45FC-9785-DA26B04F7FEF}|Server\\Server.csproj|c:\\code\\c_sharp\\laptrinhmang\\dictionary\\server\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6ECE9CDA-92CA-45FC-9785-DA26B04F7FEF}|Server\\Server.csproj|solutionrelative:server\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6ECE9CDA-92CA-45FC-9785-DA26B04F7FEF}|Server\\Server.csproj|c:\\code\\c_sharp\\laptrinhmang\\dictionary\\server\\serverform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6ECE9CDA-92CA-45FC-9785-DA26B04F7FEF}|Server\\Server.csproj|solutionrelative:server\\serverform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{702F2DD3-F655-42E2-8911-A7CE90E4FEF2}|Client\\Client.csproj|c:\\code\\c_sharp\\laptrinhmang\\dictionary\\client\\clientform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{702F2DD3-F655-42E2-8911-A7CE90E4FEF2}|Client\\Client.csproj|solutionrelative:client\\clientform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{702F2DD3-F655-42E2-8911-A7CE90E4FEF2}|Client\\Client.csproj|c:\\code\\c_sharp\\laptrinhmang\\dictionary\\client\\clientform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{702F2DD3-F655-42E2-8911-A7CE90E4FEF2}|Client\\Client.csproj|C:\\Code\\dictionary_prj_LTM\\dictionary\\client\\clientform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{702F2DD3-F655-42E2-8911-A7CE90E4FEF2}|Client\\Client.csproj|solutionrelative:client\\clientform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{702F2DD3-F655-42E2-8911-A7CE90E4FEF2}|Client\\Client.csproj|c:\\code\\c_sharp\\laptrinhmang\\dictionary\\client\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{702F2DD3-F655-42E2-8911-A7CE90E4FEF2}|Client\\Client.csproj|solutionrelative:client\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6ECE9CDA-92CA-45FC-9785-DA26B04F7FEF}|Server\\Server.csproj|c:\\code\\c_sharp\\laptrinhmang\\dictionary\\server\\serverform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{6ECE9CDA-92CA-45FC-9785-DA26B04F7FEF}|Server\\Server.csproj|solutionrelative:server\\serverform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{702F2DD3-F655-42E2-8911-A7CE90E4FEF2}|Client\\Client.csproj|c:\\code\\c_sharp\\laptrinhmang\\dictionary\\client\\clientform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{702F2DD3-F655-42E2-8911-A7CE90E4FEF2}|Client\\Client.csproj|C:\\Code\\dictionary_prj_LTM\\dictionary\\client\\clientform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{702F2DD3-F655-42E2-8911-A7CE90E4FEF2}|Client\\Client.csproj|solutionrelative:client\\clientform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{702F2DD3-F655-42E2-8911-A7CE90E4FEF2}|Client\\Client.csproj|c:\\code\\c_sharp\\laptrinhmang\\dictionary\\client\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "AbsoluteMoniker": "D:0:0:{6ECE9CDA-92CA-45FC-9785-DA26B04F7FEF}|Server\\Server.csproj|C:\\Code\\dictionary_prj_LTM\\dictionary\\server\\serverform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6ECE9CDA-92CA-45FC-9785-DA26B04F7FEF}|Server\\Server.csproj|solutionrelative:server\\serverform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6ECE9CDA-92CA-45FC-9785-DA26B04F7FEF}|Server\\Server.csproj|c:\\code\\dictionary_prj_ltm\\dictionary\\server\\serverform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6ECE9CDA-92CA-45FC-9785-DA26B04F7FEF}|Server\\Server.csproj|solutionrelative:server\\serverform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{702F2DD3-F655-42E2-8911-A7CE90E4FEF2}|Client\\Client.csproj|C:\\Code\\dictionary_prj_LTM\\dictionary\\client\\clientform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{702F2DD3-F655-42E2-8911-A7CE90E4FEF2}|Client\\Client.csproj|solutionrelative:client\\clientform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{702F2DD3-F655-42E2-8911-A7CE90E4FEF2}|Client\\Client.csproj|C:\\Code\\dictionary_prj_LTM\\dictionary\\client\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{702F2DD3-F655-42E2-8911-A7CE90E4FEF2}|Client\\Client.csproj|solutionrelative:client\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6ECE9CDA-92CA-45FC-9785-DA26B04F7FEF}|Server\\Server.csproj|C:\\Code\\dictionary_prj_LTM\\dictionary\\server\\serverform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{6ECE9CDA-92CA-45FC-9785-DA26B04F7FEF}|Server\\Server.csproj|solutionrelative:server\\serverform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6ECE9CDA-92CA-45FC-9785-DA26B04F7FEF}|Server\\Server.csproj|C:\\Code\\dictionary_prj_LTM\\dictionary\\server\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6ECE9CDA-92CA-45FC-9785-DA26B04F7FEF}|Server\\Server.csproj|solutionrelative:server\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{702F2DD3-F655-42E2-8911-A7CE90E4FEF2}|Client\\Client.csproj|C:\\Code\\dictionary_prj_LTM\\dictionary\\client\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
       "RelativeMoniker": "D:0:0:{702F2DD3-F655-42E2-8911-A7CE90E4FEF2}|Client\\Client.csproj|solutionrelative:client\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
     }
   ],
@@ -46,105 +46,56 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Code\\C_Sharp\\LapTrinhMang\\dictionary\\Server\\Program.cs",
-              "RelativeDocumentMoniker": "Server\\Program.cs",
-              "ToolTip": "C:\\Code\\C_Sharp\\LapTrinhMang\\dictionary\\Server\\Program.cs",
-              "RelativeToolTip": "Server\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "ClientForm.cs",
+              "DocumentMoniker": "C:\\Code\\dictionary_prj_LTM\\dictionary\\Client\\ClientForm.cs",
+              "RelativeDocumentMoniker": "Client\\ClientForm.cs",
+              "ToolTip": "C:\\Code\\dictionary_prj_LTM\\dictionary\\Client\\ClientForm.cs",
+              "RelativeToolTip": "Client\\ClientForm.cs",
+              "ViewState": "AgIAAIIAAAAAAAAAAAAswKMAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-14T09:44:51.601Z",
+              "WhenOpened": "2025-11-14T09:37:20.571Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ServerForm.cs",
+              "DocumentMoniker": "C:\\Code\\dictionary_prj_LTM\\dictionary\\Server\\ServerForm.cs",
+              "RelativeDocumentMoniker": "Server\\ServerForm.cs",
+              "ToolTip": "C:\\Code\\dictionary_prj_LTM\\dictionary\\Server\\ServerForm.cs",
+              "RelativeToolTip": "Server\\ServerForm.cs",
+              "ViewState": "AgIAABwBAAAAAAAAAAAswD0BAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-14T09:37:37.151Z",
+              "IsPinned": true,
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "ServerForm.cs",
-              "DocumentMoniker": "C:\\Code\\C_Sharp\\LapTrinhMang\\dictionary\\Server\\ServerForm.cs",
-              "RelativeDocumentMoniker": "Server\\ServerForm.cs",
-              "ToolTip": "C:\\Code\\C_Sharp\\LapTrinhMang\\dictionary\\Server\\ServerForm.cs",
-              "RelativeToolTip": "Server\\ServerForm.cs",
-              "ViewState": "AgIAAEYAAAAAAAAAAAAiwGYAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-14T09:37:37.151Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
               "Title": "ServerForm.Designer.cs",
-              "DocumentMoniker": "C:\\Code\\C_Sharp\\LapTrinhMang\\dictionary\\Server\\ServerForm.Designer.cs",
+              "DocumentMoniker": "C:\\Code\\dictionary_prj_LTM\\dictionary\\Server\\ServerForm.Designer.cs",
               "RelativeDocumentMoniker": "Server\\ServerForm.Designer.cs",
-              "ToolTip": "C:\\Code\\C_Sharp\\LapTrinhMang\\dictionary\\Server\\ServerForm.Designer.cs",
+              "ToolTip": "C:\\Code\\dictionary_prj_LTM\\dictionary\\Server\\ServerForm.Designer.cs",
               "RelativeToolTip": "Server\\ServerForm.Designer.cs",
-              "ViewState": "AgIAACUAAAAAAAAAAAAiwEIAAAAoAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-14T09:43:34.597Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "ClientForm.Designer.cs",
-              "DocumentMoniker": "C:\\Code\\C_Sharp\\LapTrinhMang\\dictionary\\Client\\ClientForm.Designer.cs",
-              "RelativeDocumentMoniker": "Client\\ClientForm.Designer.cs",
-              "ToolTip": "C:\\Code\\C_Sharp\\LapTrinhMang\\dictionary\\Client\\ClientForm.Designer.cs",
-              "RelativeToolTip": "Client\\ClientForm.Designer.cs",
-              "ViewState": "AgIAAEwAAAAAAAAAAAAiwGwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-14T09:37:15.723Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "ClientForm.cs",
-              "DocumentMoniker": "C:\\Code\\C_Sharp\\LapTrinhMang\\dictionary\\Client\\ClientForm.cs",
-              "RelativeDocumentMoniker": "Client\\ClientForm.cs",
-              "ToolTip": "C:\\Code\\C_Sharp\\LapTrinhMang\\dictionary\\Client\\ClientForm.cs",
-              "RelativeToolTip": "Client\\ClientForm.cs",
-              "ViewState": "AgIAAAIAAAAAAAAAAADwv0UAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-14T09:37:20.571Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Code\\C_Sharp\\LapTrinhMang\\dictionary\\Client\\Program.cs",
-              "RelativeDocumentMoniker": "Client\\Program.cs",
-              "ToolTip": "C:\\Code\\C_Sharp\\LapTrinhMang\\dictionary\\Client\\Program.cs",
-              "RelativeToolTip": "Client\\Program.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAiwBYAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-14T09:44:28.808Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "ServerForm.cs [Design]",
-              "DocumentMoniker": "C:\\Code\\C_Sharp\\LapTrinhMang\\dictionary\\Server\\ServerForm.cs",
-              "RelativeDocumentMoniker": "Server\\ServerForm.cs",
-              "ToolTip": "C:\\Code\\C_Sharp\\LapTrinhMang\\dictionary\\Server\\ServerForm.cs [Design]",
-              "RelativeToolTip": "Server\\ServerForm.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-14T09:33:21.365Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 1,
               "Title": "ClientForm.cs [Design]",
-              "DocumentMoniker": "C:\\Code\\C_Sharp\\LapTrinhMang\\dictionary\\Client\\ClientForm.cs",
+              "DocumentMoniker": "C:\\Code\\dictionary_prj_LTM\\dictionary\\Client\\ClientForm.cs",
               "RelativeDocumentMoniker": "Client\\ClientForm.cs",
-              "ToolTip": "C:\\Code\\C_Sharp\\LapTrinhMang\\dictionary\\Client\\ClientForm.cs [Design]",
+              "ToolTip": "C:\\Code\\dictionary_prj_LTM\\dictionary\\Client\\ClientForm.cs [Design]",
               "RelativeToolTip": "Client\\ClientForm.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-14T09:33:50.26Z",
@@ -152,16 +103,63 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ClientForm.Designer.cs",
+              "DocumentMoniker": "C:\\Code\\dictionary_prj_LTM\\dictionary\\Client\\ClientForm.Designer.cs",
+              "RelativeDocumentMoniker": "Client\\ClientForm.Designer.cs",
+              "ToolTip": "C:\\Code\\dictionary_prj_LTM\\dictionary\\Client\\ClientForm.Designer.cs",
+              "RelativeToolTip": "Client\\ClientForm.Designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAH4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-14T09:37:15.723Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Code\\dictionary_prj_LTM\\dictionary\\Client\\Program.cs",
+              "RelativeDocumentMoniker": "Client\\Program.cs",
+              "ToolTip": "C:\\Code\\dictionary_prj_LTM\\dictionary\\Client\\Program.cs",
+              "RelativeToolTip": "Client\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAiwBYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-14T09:44:28.808Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Code\\dictionary_prj_LTM\\dictionary\\Server\\Program.cs",
+              "RelativeDocumentMoniker": "Server\\Program.cs",
+              "ToolTip": "C:\\Code\\dictionary_prj_LTM\\dictionary\\Server\\Program.cs",
+              "RelativeToolTip": "Server\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-14T09:44:51.601Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ServerForm.cs [Design]",
+              "DocumentMoniker": "C:\\Code\\dictionary_prj_LTM\\dictionary\\Server\\ServerForm.cs",
+              "RelativeDocumentMoniker": "Server\\ServerForm.cs",
+              "ToolTip": "C:\\Code\\dictionary_prj_LTM\\dictionary\\Server\\ServerForm.cs [Design]",
+              "RelativeToolTip": "Server\\ServerForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-14T09:33:21.365Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 8,
               "Title": "App.config",
-              "DocumentMoniker": "C:\\Code\\C_Sharp\\LapTrinhMang\\dictionary\\Client\\App.config",
+              "DocumentMoniker": "C:\\Code\\dictionary_prj_LTM\\dictionary\\Client\\App.config",
               "RelativeDocumentMoniker": "Client\\App.config",
-              "ToolTip": "C:\\Code\\C_Sharp\\LapTrinhMang\\dictionary\\Client\\App.config",
+              "ToolTip": "C:\\Code\\dictionary_prj_LTM\\dictionary\\Client\\App.config",
               "RelativeToolTip": "Client\\App.config",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
-              "WhenOpened": "2025-11-14T09:45:14.184Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-14T09:45:14.184Z"
             }
           ]
         }

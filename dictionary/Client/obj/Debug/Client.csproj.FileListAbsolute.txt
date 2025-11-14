@@ -12,3 +12,17 @@ C:\Code\C_Sharp\LapTrinhMang\dictionary\Client\obj\Debug\Client.ClientForm.resou
 C:\Code\C_Sharp\LapTrinhMang\dictionary\Client\bin\Debug\Newtonsoft.Json.dll
 C:\Code\C_Sharp\LapTrinhMang\dictionary\Client\bin\Debug\Newtonsoft.Json.xml
 C:\Code\C_Sharp\LapTrinhMang\dictionary\Client\obj\Debug\Client.csproj.Up2Date
+C:\Code\dictionary_prj_LTM\dictionary\Client\bin\Debug\Client.exe.config
+C:\Code\dictionary_prj_LTM\dictionary\Client\bin\Debug\Client.exe
+C:\Code\dictionary_prj_LTM\dictionary\Client\bin\Debug\Client.pdb
+C:\Code\dictionary_prj_LTM\dictionary\Client\bin\Debug\Newtonsoft.Json.dll
+C:\Code\dictionary_prj_LTM\dictionary\Client\bin\Debug\Newtonsoft.Json.xml
+C:\Code\dictionary_prj_LTM\dictionary\Client\obj\Debug\Client.csproj.AssemblyReference.cache
+C:\Code\dictionary_prj_LTM\dictionary\Client\obj\Debug\Client.exe.config
+C:\Code\dictionary_prj_LTM\dictionary\Client\obj\Debug\Client.ClientForm.resources
+C:\Code\dictionary_prj_LTM\dictionary\Client\obj\Debug\Client.Properties.Resources.resources
+C:\Code\dictionary_prj_LTM\dictionary\Client\obj\Debug\Client.csproj.GenerateResource.cache
+C:\Code\dictionary_prj_LTM\dictionary\Client\obj\Debug\Client.csproj.CoreCompileInputs.cache
+C:\Code\dictionary_prj_LTM\dictionary\Client\obj\Debug\Client.csproj.Up2Date
+C:\Code\dictionary_prj_LTM\dictionary\Client\obj\Debug\Client.exe
+C:\Code\dictionary_prj_LTM\dictionary\Client\obj\Debug\Client.pdb
