@@ -24,3 +24,4 @@ C:\Code\dictionary_prj_LTM\dictionary\Server\bin\Debug\Server.pdb
 C:\Code\dictionary_prj_LTM\dictionary\Server\bin\Debug\Newtonsoft.Json.dll
 C:\Code\dictionary_prj_LTM\dictionary\Server\bin\Debug\Newtonsoft.Json.xml
 C:\Code\dictionary_prj_LTM\dictionary\Server\obj\Debug\Server.csproj.Up2Date
+C:\Code\dictionary_prj_LTM\dictionary\Server\obj\Debug\Server.ServerForm.resources

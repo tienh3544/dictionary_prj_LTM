@@ -1,7 +1,9 @@
 ﻿using System;
+using System.Data.SqlClient;
 using System.IO;
 using System.Net;
 using System.Net.Sockets;
+using System.Speech.Synthesis;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -16,13 +18,16 @@ namespace Server
         private TcpListener listener;
         private bool running = false;
         private HttpClient httpClient;
-        private int clientCount = 0; // Counter cho số client đang kết nối
+        private SpeechSynthesizer synthesizer;
+        private string connectionString = "Server=localhost;Database=DictionaryDB;Integrated Security=True;";
+        private int clientCount = 0;
 
         public ServerForm()
         {
             InitializeComponent();
             httpClient = new HttpClient();
             httpClient.Timeout = TimeSpan.FromSeconds(10);
+            synthesizer = new SpeechSynthesizer();
         }
 
         private async void btnStart_Click(object sender, EventArgs e)
@@ -81,14 +86,13 @@ namespace Server
             {
                 while (client.Connected)
                 {
-                    string word = await reader.ReadLineAsync();
-                    if (string.IsNullOrEmpty(word)) break;
+                    string command = await reader.ReadLineAsync();
+                    if (string.IsNullOrEmpty(command)) break;
 
-                    AddLog($"Nhận từ client: {word}");
-
-                    string result = await LookupWord(word);
-                    await writer.WriteLineAsync(result);
-                    AddLog($"Đã gửi kết quả");
+                    AddLog($"Nhận lệnh: {command}");
+                    string response = await ProcessCommand(command);
+                    await writer.WriteLineAsync(response);
+                    AddLog($"Đã gửi phản hồi");
                 }
             }
             catch (Exception ex)
@@ -110,14 +114,81 @@ namespace Server
             }
         }
 
+        private async Task<string> ProcessCommand(string command)
+        {
+            string[] parts = command.Split('|');
+            string action = parts[0];
+
+            switch (action)
+            {
+                case "LOGIN":
+                    if (parts.Length >= 3)
+                    {
+                        string username = parts[1];
+                        string password = parts[2];
+                        string hashedPassword = HashPassword(password);
+                        int userId = ValidateLogin(username, hashedPassword);
+                        if (userId != -1)
+                        {
+                            return $"SUCCESS|{userId}|{username}";
+                        }
+                        else
+                        {
+                            return "FAIL|Invalid credentials";
+                        }
+                    }
+                    break;
+                case "REGISTER":
+                    if (parts.Length >= 3)
+                    {
+                        string username = parts[1];
+                        string password = parts[2];
+                        string hashedPassword = HashPassword(password);
+                        if (RegisterUser(username, hashedPassword))
+                        {
+                            return "SUCCESS|Registered";
+                        }
+                        else
+                        {
+                            return "FAIL|Username exists";
+                        }
+                    }
+                    break;
+                case "SEARCH":
+                    if (parts.Length >= 3)
+                    {
+                        int userId = int.Parse(parts[1]);
+                        string word = parts[2];
+                        string result = await LookupWord(word);
+                        SaveToHistory(userId, word);
+                        return $"RESULT|{result}";
+                    }
+                    break;
+                case "HISTORY":
+                    if (parts.Length >= 2)
+                    {
+                        int userId = int.Parse(parts[1]);
+                        string history = GetHistory(userId);
+                        return $"HISTORY|{history}";
+                    }
+                    break;
+                case "PRONOUNCE":
+                    if (parts.Length >= 2)
+                    {
+                        string word = parts[1];
+                        synthesizer.Speak(word); // Phát âm trên server
+                        return "PRONOUNCED";
+                    }
+                    break;
+            }
+            return "ERROR|Invalid command";
+        }
+
         private async Task<string> LookupWord(string word)
         {
             try
             {
-                // Bước 1: Dịch nghĩa từ GG
                 string nghia = await TranslateWithGoogle(word);
-
-                // Bước 2: Lấy dữ liệu từ DictionaryAPI
                 string apiResult = await GetDictionaryDefinition(word);
                 if (apiResult != "not_found")
                 {
@@ -125,15 +196,11 @@ namespace Server
                     string phonetic = parts.Length > 0 ? parts[0] : "";
                     string definition = parts.Length > 1 ? parts[1] : "";
                     string pos = parts.Length > 2 ? parts[2] : "danh từ";
-
-                    // Dịch mô tả (definition) sang tiếng Việt bằng GG
                     string mota = string.IsNullOrEmpty(definition) ? "" : await TranslateWithGoogle(definition);
-
                     return $"{phonetic}|{nghia}|{mota}|{pos}";
                 }
                 else
                 {
-                    // Không có API, dùng nghĩa từ GG, mô tả trống, POS mặc định
                     return $"|{nghia}||danh từ";
                 }
             }
@@ -149,7 +216,6 @@ namespace Server
             try
             {
                 string url = $"https://api.dictionaryapi.dev/api/v2/entries/en/{Uri.EscapeDataString(word.ToLower())}";
-
                 HttpResponseMessage response = await httpClient.GetAsync(url);
                 if (response.IsSuccessStatusCode)
                 {
@@ -173,11 +239,7 @@ namespace Server
             {
                 JArray data = JArray.Parse(json);
                 JObject firstEntry = data[0] as JObject;
-
-                // Lấy phát âm
                 string phonetic = firstEntry["phonetic"]?.ToString() ?? "";
-
-                // Lấy nghĩa và POS đầu tiên
                 JArray meanings = firstEntry["meanings"] as JArray;
                 string definition = "";
                 string pos = "danh từ";
@@ -186,7 +248,6 @@ namespace Server
                     JObject firstMeaning = meanings[0] as JObject;
                     string partOfSpeech = firstMeaning["partOfSpeech"]?.ToString() ?? "";
                     pos = TranslatePartOfSpeech(partOfSpeech);
-
                     JArray definitions = firstMeaning["definitions"] as JArray;
                     if (definitions != null && definitions.Count > 0)
                     {
@@ -194,14 +255,12 @@ namespace Server
                         definition = firstDef["definition"]?.ToString() ?? "";
                     }
                 }
-
                 return $"{phonetic}|{definition}|{pos}";
             }
             catch (Exception ex)
             {
                 AddLog($"Lỗi parse dictionary: {ex.Message}");
             }
-
             return "not_found";
         }
 
@@ -210,17 +269,15 @@ namespace Server
             try
             {
                 string url = $"https://translate.googleapis.com/translate_a/single?client=gtx&sl=en&tl=vi&dt=t&q={Uri.EscapeDataString(text)}";
-
                 string json = await httpClient.GetStringAsync(url);
                 JArray data = JArray.Parse(json);
                 string translated = data[0][0][0]?.ToString() ?? text;
-
                 return translated;
             }
             catch (Exception ex)
             {
                 AddLog($"Lỗi Google Translate: {ex.Message}");
-                return text; // Trả về text gốc nếu lỗi
+                return text;
             }
         }
 
@@ -237,7 +294,6 @@ namespace Server
                 ["conjunction"] = "liên từ",
                 ["interjection"] = "thán từ"
             };
-
             return posMap.TryGetValue(partOfSpeech, out string translated) ? translated : partOfSpeech;
         }
 
@@ -266,10 +322,95 @@ namespace Server
                 ["music"] = "|Âm nhạc|Nghệ thuật|danh từ",
                 ["time"] = "|Thời gian|Khái niệm|danh từ"
             };
+            return dictionary.ContainsKey(word.ToLower()) ? dictionary[word.ToLower()] : "|||Không tìm thấy|Từ không có trong từ điển";
+        }
 
-            return dictionary.ContainsKey(word.ToLower()) ?
-                dictionary[word.ToLower()] :
-                "|||Không tìm thấy|Từ không có trong từ điển";
+        private int ValidateLogin(string username, string hashedPassword)
+        {
+            using (SqlConnection conn = new SqlConnection(connectionString))
+            {
+                conn.Open();
+                string query = "SELECT id FROM Users WHERE username = @username AND password_hash = @password";
+                using (SqlCommand cmd = new SqlCommand(query, conn))
+                {
+                    cmd.Parameters.AddWithValue("@username", username);
+                    cmd.Parameters.AddWithValue("@password", hashedPassword);
+                    object result = cmd.ExecuteScalar();
+                    return result != null ? Convert.ToInt32(result) : -1;
+                }
+            }
+        }
+
+        private bool RegisterUser(string username, string hashedPassword)
+        {
+            using (SqlConnection conn = new SqlConnection(connectionString))
+            {
+                conn.Open();
+                string checkQuery = "SELECT COUNT(*) FROM Users WHERE username = @username";
+                using (SqlCommand checkCmd = new SqlCommand(checkQuery, conn))
+                {
+                    checkCmd.Parameters.AddWithValue("@username", username);
+                    int count = Convert.ToInt32(checkCmd.ExecuteScalar());
+                    if (count > 0) return false;
+                }
+                string insertQuery = "INSERT INTO Users (username, password_hash) VALUES (@username, @password)";
+                using (SqlCommand insertCmd = new SqlCommand(insertQuery, conn))
+                {
+                    insertCmd.Parameters.AddWithValue("@username", username);
+                    insertCmd.Parameters.AddWithValue("@password", hashedPassword);
+                    insertCmd.ExecuteNonQuery();
+                }
+                return true;
+            }
+        }
+
+        private void SaveToHistory(int userId, string word)
+        {
+            using (SqlConnection conn = new SqlConnection(connectionString))
+            {
+                conn.Open();
+                string query = "INSERT INTO History (user_id, word, timestamp) VALUES (@userId, @word, @timestamp)";
+                using (SqlCommand cmd = new SqlCommand(query, conn))
+                {
+                    cmd.Parameters.AddWithValue("@userId", userId);
+                    cmd.Parameters.AddWithValue("@word", word);
+                    cmd.Parameters.AddWithValue("@timestamp", DateTime.Now);
+                    cmd.ExecuteNonQuery();
+                }
+            }
+        }
+
+        private string GetHistory(int userId)
+        {
+            string history = "";
+            using (SqlConnection conn = new SqlConnection(connectionString))
+            {
+                conn.Open();
+                string query = "SELECT word, timestamp FROM History WHERE user_id = @userId ORDER BY timestamp DESC";
+                using (SqlCommand cmd = new SqlCommand(query, conn))
+                {
+                    cmd.Parameters.AddWithValue("@userId", userId);
+                    using (SqlDataReader reader = cmd.ExecuteReader())
+                    {
+                        while (reader.Read())
+                        {
+                            string word = reader["word"].ToString();
+                            string timestamp = reader["timestamp"].ToString();
+                            history += $"{timestamp} - {word};";
+                        }
+                    }
+                }
+            }
+            return history.TrimEnd(';');
+        }
+
+        private string HashPassword(string password)
+        {
+            using (System.Security.Cryptography.SHA256 sha256 = System.Security.Cryptography.SHA256.Create())
+            {
+                byte[] bytes = sha256.ComputeHash(Encoding.UTF8.GetBytes(password));
+                return BitConverter.ToString(bytes).Replace("-", "").ToLower();
+            }
         }
 
         private string GetLocalIPAddress()
@@ -309,6 +450,7 @@ namespace Server
             running = false;
             listener?.Stop();
             httpClient?.Dispose();
+            synthesizer?.Dispose();
             lblStatus.Text = "Đã dừng";
             btnStart.Enabled = true;
             btnStop.Enabled = false;

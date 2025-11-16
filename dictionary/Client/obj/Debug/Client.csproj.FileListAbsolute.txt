@@ -26,3 +26,16 @@ C:\Code\dictionary_prj_LTM\dictionary\Client\obj\Debug\Client.csproj.CoreCompile
 C:\Code\dictionary_prj_LTM\dictionary\Client\obj\Debug\Client.csproj.Up2Date
 C:\Code\dictionary_prj_LTM\dictionary\Client\obj\Debug\Client.exe
 C:\Code\dictionary_prj_LTM\dictionary\Client\obj\Debug\Client.pdb
+C:\Code\dictionary_prj_LTM\dictionary\Client\bin\Debug\Microsoft.Data.Sqlite.dll
+C:\Code\dictionary_prj_LTM\dictionary\Client\bin\Debug\SQLitePCLRaw.core.dll
+C:\Code\dictionary_prj_LTM\dictionary\Client\bin\Debug\System.Buffers.dll
+C:\Code\dictionary_prj_LTM\dictionary\Client\bin\Debug\System.Memory.dll
+C:\Code\dictionary_prj_LTM\dictionary\Client\bin\Debug\System.Numerics.Vectors.dll
+C:\Code\dictionary_prj_LTM\dictionary\Client\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Code\dictionary_prj_LTM\dictionary\Client\bin\Debug\Microsoft.Data.Sqlite.xml
+C:\Code\dictionary_prj_LTM\dictionary\Client\bin\Debug\System.Buffers.xml
+C:\Code\dictionary_prj_LTM\dictionary\Client\bin\Debug\System.Memory.xml
+C:\Code\dictionary_prj_LTM\dictionary\Client\bin\Debug\System.Numerics.Vectors.xml
+C:\Code\dictionary_prj_LTM\dictionary\Client\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Code\dictionary_prj_LTM\dictionary\Client\obj\Debug\Client.InitialForm.resources
+C:\Code\dictionary_prj_LTM\dictionary\Client\obj\Debug\Client.RegisterForm.resources
